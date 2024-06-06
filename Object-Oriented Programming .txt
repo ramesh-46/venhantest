@@ -1,0 +1,20 @@
+Object-Oriented Programming 
+
+18. Create a class Book with the following attributes and methods: 
+*Attributes: `title`, `author`, `pages` 
+*Methods: 
+*`__init__(self, title: str, author: str, pages: int)`: Constructor to initialize the attributes. *`__str__(self) -> str`: Method to return a string representation of the book.
+
+
+class Book:
+    def __init__(self, title: str, author: str, pages: int):
+        self.title = title
+        self.author = author
+        self.pages = pages
+
+    def __str__(self) -> str:
+        return f"Title: {self.title}, Author: {self.author}, Pages: {self.pages}"
+
+# Example usage:
+book1 = Book("Python Programming", "John Doe", 300)
+print(book1)  # Output: Title: Python Programming, Author: John Doe, Pages: 300

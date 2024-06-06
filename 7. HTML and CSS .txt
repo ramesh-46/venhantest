@@ -1,0 +1,42 @@
+7. HTML and CSS 
+Create a simple HTML page with a header that says "Welcome to My Website" and a  paragraph of lorem ipsum text. Add some basic CSS to style the header with a blue color  and center alignment. 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: blue; /* Blue color for the header */
+            text-align: center; /* Center alignment for the header */
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML content -->
+    <h1>Welcome to My Website</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</body>
+</html>
+
+
+
+
+
+8. JavaScript Basics 
+Write a JavaScript function `showAlert()` that displays an alert with the message "Hello,  this is a JavaScript alert!".
+
+
+function showAlert() {
+    alert("Hello, this is a JavaScript alert!");
+}
+
+// Call the function to display the alert
+showAlert();

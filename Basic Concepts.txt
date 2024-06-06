@@ -1,0 +1,59 @@
+Basic Concepts
+
+Write a function `is_prime(n: int) -> bool` that checks if a given number is prime.
+
+def is_prime(n: int) -> bool:
+    if n <= 1:
+        return False  # Numbers less than or equal to 1 are not prime
+
+    if n <= 3:
+        return True  # 2 and 3 are prime numbers
+
+    if n % 2 == 0 or n % 3 == 0:
+        return False  # Numbers divisible by 2 or 3 are not prime
+
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False  # Numbers divisible by factors other than 1, itself, and 2 or 3 are not prime
+        i += 6
+
+    return True  # If no factors are found, the number is prime
+
+
+
+
+2......
+ Write a Python function `reverse_string(s: str) -> str` that takes a string and returns its  reverse. 
+
+def reverse_string(s: str) -> str:
+    return s[::-1]
+
+
+
+3... Given a list of integers, write a function `sum_of_squares(lst: List[int]) -> int` that  returns the sum of the squares of the elements. 
+
+from typing import List
+
+def sum_of_squares(lst: List[int]) -> int:
+    return sum(x ** 2 for x in lst)
+
+
+4......
+ Write a Python program to count the frequency of each character in a given string and  return a dictionary with characters as keys and their frequencies as values. 
+
+
+def count_characters(s: str) -> dict:
+    char_freq = {}
+    for char in s:
+        if char in char_freq:
+            char_freq[char] += 1
+        else:
+            char_freq[char] = 1
+    return char_freq
+
+# Test the function
+input_string = "hello world"
+frequency_dict = count_characters(input_string)
+print(frequency_dict)
+ 
